@@ -1,77 +1,79 @@
-.page {
-  position: relative;
-  width: 100%;
-  height: 100%;
+
+/* başlıklar */
+h2{
+  color: #325494;
+  font-weight: bold;
 }
 
-.page img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#header {
-  height: 80px;
+/* header */
+#header{
   background: transparent;
+  height: 80px;
+  transition: background-color 0.3s ease;
 }
 
-#header .header-scrolled {
-  height: 50px;
-  background-color: black;
+#header.scrolled {
+  background-color:#325494;
 }
 
-#header .container {
+#header .container{
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-
-#header .logo img {
+#header .logo img{
   display: block;
+  justify-content: space-around;
 }
 
-#navbar {
-  padding: 0;
-}
-
-#navbar ul {
-  margin: 0;
-  padding: 0;
+#navbar ul{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-#navbar li {
+#navbar li{
   position: relative;
-  margin: 0 10px;
-  padding-left: 6px;
-  padding: 6px 10px;
+  padding: 10px 20px;
 }
 
-#navbar li a {
-  color: #fff;
-  font-weight: 500;
-  padding: 5px;
-  font-weight: 800;
-  padding: 0;
-  font-family: Outfit;
-  font-size: large;
+#navbar li a{
+  font-weight: bold;
+  color:#fff;
 }
 
+.menu-btn,.menu-icon{
+  display: none;
+}
 .join {
   background-color: #f59c06;
   border-radius: 6px;
 }
+.btn-primary{
+  background-color:#325494;
+  border: none;
+}
 
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  color: #fff;
+/* hero-section */
+#section-hero{
+  height: 100vh;
+  background-image: url(./images/hero-man.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: 70px;
+  font-weight: bold;
+  color:#fff;
+}
+#section-hero p{
+  color:#fff;
+  font-size:20px ;
+  font-weight: bold;
+  background-color:black;
+  opacity:0.8;
 }
 
 .text-1 {
@@ -85,28 +87,7 @@
   font-size: 20px;
 }
 
-.text-2 {
-  text-shadow: 2px 2px 3px #000000;
-  font-size: 80px;
-  font-weight: 700;
-  font-family: Outfit;
-}
-
-.text-3 {
-  font-family: Outfit;
-  text-shadow: 2px 2px 3px #000000;
-  width: 1200px;
-  font-weight: 600;
-  font-style: inherit;
-  background-color: rgba(0, 0, 0, .6);
-  padding: 15px;
-  border-radius: 2px;
-}
-
-.text-1,
-.text-2 {
-  margin: 0;
-}
+/* Sign Up ve Details Butonları */
 
 .custom-button {
   color: #fff;
@@ -172,6 +153,7 @@
   display: inline-block;
 }
 
+/* Ara kısım Course - Work Out - Working Hour - Happy Client */
 
 #second {
   background-color: #f1f8ff;
@@ -193,6 +175,8 @@
   font-weight: 800;
   margin: 20px;
 }
+
+/* Rakamlar ve Tanımlamalar */
 
 .number {
   color: #325494;
@@ -230,13 +214,30 @@
   font-family: Outfit;
 }
 
+/* Başlık altı çizgi */
+
 .liner {
   width: 80px;
   border: none;
   border-top: 9px solid #f29e08;
   border-radius: 4px;
   margin-bottom: 30px;
+  margin-left: 260px;
+  opacity: 20;
+
 }
+
+.lines {
+  width: 80px;
+  border: none;
+  border-top: 9px solid #f29e08;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-left: 900px;
+  opacity: 20;
+}
+
+/*Yoga ve diğer değişen sayfaların olduğu bölüm => Diğerleri main.js bölümünde Our Classes atamaları olarak verildi */
 
 .yoga {
   margin-top: 80px;
@@ -246,11 +247,13 @@
 .yoga-text {
   font-weight: 700;
   font-family: Outfit;
+  color: #464742
 }
 
 .yoga-title {
   font-weight: 800;
   font-family: Outfit;
+  color: #464742
 }
 
 .yoga-prag {
@@ -267,7 +270,15 @@
 
 .third-container {
   position: relative;
+  margin-bottom: 50px;
 }
+
+/* Ayrı section olarak Our Classes Bölümü */ 
+
+#third {
+  margin-bottom: 50px;
+}
+
 
 .shadow {
   position: absolute;
@@ -301,6 +312,51 @@
 
 }
 
+/* Butonlar ve hover */
+
+.our-classes-buttons {
+  position: relative;
+  background-color: #325494;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: auto;
+  height: 47px;
+  line-height: 1;
+  border-radius: 3px;
+  font-family: Outfit;
+}
+
+.our-classes-buttons::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #f59c06 transparent;
+  opacity: 0;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.our-classes-buttons:hover::after {
+  opacity: 10;
+  transition: background-color 2s ease, color 2s ease;
+}
+
+.our-classes-buttons:hover {
+  background-color: #f59c06;
+  color: #fff;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+/* Bmi Bölümü */
+
 .bmi-container {
   margin-top: 80px;
   max-width: 400px;
@@ -309,12 +365,12 @@
 .bmi-text {
   font-weight: 700;
   font-family: Outfit;
-  margin-bottom: 120px;
 }
 
 .bmi-title {
   font-weight: 800;
   font-family: Outfit;
+  margin-bottom: 200px;
 }
 
 .bmi-prag {
@@ -325,24 +381,21 @@
   align-items: center;
 }
 
+
 .bmi-img {
   margin-left: 150px;
   font-family: Outfit;
   position: relative;
 }
 
-.bmi-img::after {
-  content: "";
+.img-triangle {
+  color: #f29e08;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 100%;
-  right: 50%;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 30px solid #f59c06;
+  bottom: -22%;
+  left: 6%;
+  transform: translateY(-50%);
+  font-size: 50px;
+
 }
 
 .input-your {
@@ -391,7 +444,10 @@
   font-family: Outfit;
 }
 
+/* Our Best Trainers Resimler ve Effect */
+
 #fourth {
+  bottom: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,13 +470,14 @@
   border: 2px solid #f29e08;
   display: flex;
   flex-direction: column;
-  /* opacity: 0.5; */
 }
 
 .tra-div {
   position: relative;
 
 }
+
+/* Yan hoverlar */
 
 .after {
   position: absolute;
@@ -469,23 +526,48 @@
   width: 106%;
 }
 
-/* .after-left {
+/* Resim önündeki trainers bilgileri effect ile */
+
+.after-left {
   position: absolute;
   background-color: #325494;
-  width: 80%;
-  height:20%;
-  top: -50%;
-  left: 50%;
-  transform: translate(0, -50%);
-  transition: opacity 0.5s ease;
-  z-index: 2; 
+  width: 270px;
+  height: 120px;
+  top: 50%;
+  left: 5.5%;
+  clip-path: polygon(0 16%, 18% 16%, 18% 0, 84% 0, 83% 19%, 100% 19%, 100% 82%, 83% 82%, 83% 100%, 17% 100%, 17% 81%, 0 81%);
+  transform: translate(-50, -50%);
+  z-index: 2;
+  opacity: -1;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  font-size: 28px;
+  font-family: Outfit;
+  color: white;
 }
 
-.trainer-img:hover~.after-left {
+
+.after-left p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.after-left span {
+  opacity: 1;
+  vertical-align: bottom;
+}
+
+.trainer-img:hover~.after-left,
+.after-left:hover {
   background-color: #325494;
-  height: 30%;
-  width: 80%;
-} */
+  height: 120px;
+  width: 270px;
+  top: 60%;
+  opacity: 2;
+  z-index: 3;
+}
+
+/* Purchase From Us */  
 
 #fifth {
   display: flex;
@@ -512,7 +594,6 @@
   width: 260px;
   height: 350px;
   border-radius: 9px;
-  /* opacity: 0.5; */
 }
 
 .strike {
@@ -538,6 +619,7 @@
   display: flex;
   color: #3b3b3b;
   text-decoration: none;
+
 }
 
 .basket {
@@ -552,6 +634,7 @@
 .shop {
   margin-top: 5px;
   margin-left: 25px;
+  color: #000000;
 }
 
 .purc {
@@ -584,6 +667,8 @@
   border-radius: 25px;
 }
 
+/* Review Client Bölümü*/
+
 #sixth {
   display: flex;
   justify-content: center;
@@ -598,7 +683,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 10rem;
   padding-bottom: 50px;
 
 }
@@ -606,7 +690,6 @@
 .client-box img {
   display: flex;
   flex-direction: column;
-
 }
 
 
@@ -614,6 +697,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  text-align: left;
 }
 
 .client-text {
@@ -639,6 +723,7 @@
   width: 500px;
   padding: 15px;
   position: relative;
+  margin-left: 10px;
 
 
 }
@@ -660,27 +745,28 @@
   bottom: -30px;
   left: 0;
   border-top: 30px solid rgba(50, 84, 148, 0.5);
-  border-right: 30px solid transparent; 
+  border-right: 30px solid transparent;
   transform: rotate(90deg);
 }
+
 .client-img {
   width: 50px;
   height: 50px;
   border-radius: 25px;
 }
 
-
+/* Contact Us Bölümü */
 
 #seventh {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 
 }
 
-.contact-container {
+.contact-containers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -750,6 +836,8 @@
   cursor: pointer;
 }
 
+/* Footer Bölümü */
+
 #footer {
   background-color: #325494;
   color: #fff;
@@ -789,7 +877,6 @@
   width: 260px;
   height: 350px;
   border-radius: 9px;
-  /* opacity: 0.5; */
 }
 
 .strikes {
@@ -811,6 +898,7 @@
   display: flex;
   justify-content: center;
   padding: 0 10px;
+  justify-content: space-around;
 }
 
 .contact-infos,
@@ -827,4 +915,329 @@ ul {
 .cont-title,
 .strikes {
   margin: 5px 0;
+}
+
+/* 576px Görünüm */
+
+@media (max-width: 576px) {
+
+  #header {
+    max-width: 576px;
+  }
+  .navbar {
+    display: flex;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 30%;
+    height: 50vh;
+    background-color:#325494;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;
+    transform: translate(100%);
+    transition: all 0.5s;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu-btn:checked ~ .navbar {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  /* Menü icon */
+  .menu-icon {
+    display: block;
+    font-size: 3rem;
+    cursor: pointer;
+    color:#fff;
+    z-index: 2000;
+  }
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Giriş bölümü mobil */
+  #section-hero{
+    padding-top: 60px;
+  }
+
+  /* Giriş buton ayarları*/
+  .custom-button {
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    height: 45px;
+    line-height: 1;
+}
+
+.details-button {
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    height: 47px;
+    line-height: 1;
+    border-radius: 3px;
+    font-family: Outfit;
+}
+
+.signup-button {
+    background-color: #325494;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    height: 47px;
+    line-height: 1;
+    border-radius: 3px;
+    font-family: Outfit;
+}
+
+.signup-button:hover {
+    background-color: #f59c06;
+}
+
+.details-button:hover {
+    background-color: #f59c06;
+    color: #fff;
+    border: none;
+}
+
+.button-space {
+    width: 50px;
+    display: inline-block;
+}
+
+.sig-det-btn {
+  display: block;
+}
+
+.sig-det-btn::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sig-det-btn button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+  .text-1 {
+    font-size: 30px;
+  }
+
+  .text-2 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Outfit;
+  }
+
+  .text-2 br:first-child {
+    display: none;
+
+  }
+
+  .text-3 {
+    /* width: 100%; */
+    width: 550px;
+    font-size: 20px;
+    text-align: left;
+
+  }
+
+  /* Ara Bölüm */
+  #second {
+    position: relative;
+  }
+
+  .box {
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 120px;
+
+  }
+
+  .boxes {
+    width: 300px;
+  }
+
+  /* Our Classes Bölümü */
+  #third {
+    position: relative;
+
+  }
+
+  .text-4 {
+    width: 100%;
+    width: 220px;
+  }
+
+  .text-5 {
+    width: 100%;
+    width: 220px;
+  }
+
+  /* yoga yazılar ve başlık */
+
+  .yoga-text {
+    text-align: center;
+    font-size: 20px;
+    color: #464742
+  }
+
+  .yoga-title {
+    font-size: 30px;
+    text-align: center;
+    color: #464742
+  }
+
+  .title-3 {
+    text-align: center;
+  }
+
+  /* Bmi ayarları */
+
+  .bmi-text {
+    text-align: left;
+    width: 500px;
+  }
+
+  .bmi-img {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .img-triangle {
+    left: 10%;
+  }
+
+  .input-your {
+    display: block;
+  }
+
+  /* Purchase Bölümü */
+  .tra-div {
+    margin-bottom: 50px;
+  }
+
+  .trainer-box {
+    display: inline-block;
+  }
+
+  .purchase-container {
+    display: inline-block;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .client-container {
+    display: inline-block;
+  }
+
+  .client-info {
+    margin-top: 50px;
+  }
+
+  .contact-container {
+    display: inline-block;
+  }
+
+  #contact-info iframe {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* .client-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  /* Footer */
+  .footer-logo img {
+    margin-left: 20px;
+  }
+
+  .footer-logo {
+    padding-left: 0;
+    /* margin-left: 5px; */
+  }
+
+  .footer-logo p {
+    width: 550px;
+    margin-left: 20px
+  }
+
+  .contact-containers {
+    display: inline-block;
+
+  }
+
+
+
+  .contact-container {
+    display: flex;
+
+  }
+
+  .client-container {
+    display: inline-block;
+  }
+
+  .contact-infos {
+
+    margin: 0;
+  }
+
+  .helpful-links {
+    margin: 0;
+  }
+
+  /* Ufak ayarlar */
+  .liner {
+    text-align: center;
+    margin-left: 85px;
+  }
+
+  .lines {
+    width: 80px;
+    border: none;
+    border-top: 9px solid #f29e08;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    opacity: 20;
+  }
+
+  .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+  }
 }

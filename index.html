@@ -4,83 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sport Center</title>
-    <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="page">
-      <img src="./images/hero-man.jpg" alt="Tam Ekran Resim" />
-    </div>
+
+    <!-- Header -->
     <header id="header" class="fixed-top">
       <div class="container">
         <div class="logo">
-          <img src="./images/logo.png" alt="Logo" />
+          <img src="./images/logo.png" width="254px" height="87px" alt="logo">
         </div>
+        <label for="menu-btn" class="menu-icon"><i class="bi bi-list"></i></label>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
         <nav id="navbar" class="navbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#text">Home</a>
+              <a class="nav-link scrollto active" aria-current="page" href="#section-hero">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#third">Classes</a>
+              <a class="nav-link scrollto" href="#third">Classes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#fourth">Trainer</a>
+              <a class="nav-link scrollto" href="#fourth">Trainer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sixth">Review</a>
+              <a class="nav-link scrollto" href="#sixth">Rewiew</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#seventh">Contact</a>
+              <a class="nav-link scrollto" href="#seventh">Contact</a>
             </li>
-            <li class="join">
-              <a class="nav-link" href="#">JOIN US</a>
+            <li class="nav-item">
+              <a class="nav-link scrollto join" href="#">JOIN US</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="text" id="text">
+  
+    <!-- Giriş Bölümü Image üstü yazılar -->
+    <section id="section-hero">
       <div class="container">
-        <p class="text-1">POWERFULL</p>
-        <h1 class="text-2">Group <br />Practice <br />With Trainer</h1>
-        <h3 class="text-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-          minima incidunt delectus modi! Neque pariatur maiores molestiae
-          sapiente aspernatur, autem minima delectus corrupti? Consequatur
-          voluptatem doloribus nobis odio voluptatum. Est.
-        </h3>
-        <button class="custom-button signup-button">Sign Up</button>
-        <div class="button-space"></div>
-        <button class="custom-button details-button">Details</button>
+        <button class="btn btn-primary">POWERFULL</button>
+        <h1>Group <br> Practice <br> With Trainer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae facere fugiat inventore consectetur
+          exercitationem saepe ratione odio debitis beatae animi ad magni, distinctio quas aperiam ullam id ipsa quisquam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, id.</p>
+          <div class="sig-det-btn col-md-12">
+            <button class="custom-button signup-button">Sign Up</button>
+            <div class="button-space"></div>
+            <button class="custom-button details-button">Details</button>
+          </div>
       </div>
-    </div>
-    <section id="second">
+    </section>
+    
+    <!-- Ara Sayılar Bölümü -->
+    <section id="second" class="section">
       <div class="second-container">
         <div class="row justify-content-center">
           <div class="col-lg-2">
@@ -118,94 +116,149 @@
         </div>
       </div>
     </section>
-    <section id="third">
+
+    <!-- Our Classes Bölümü  -->
+    <section id="third" class="section">
       <div class="third-container">
         <div class="main">
           <h2 class="title-1">OUR CLASSES</h2>
-          <hr class="liner" />
+          <div class="lines"></div>
+          
           <p class="text-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            iusto officia, voluptatem architecto earum nemo laudantium
-            perspiciatis ex ratione vel.
+            Lorem ipsum is not simply random text.It has roots in a piece of
+            classical at Hampden-Sydney College
           </p>
         </div>
         <div class="row justify-content-center">
-          <div class="col-lg-2">
-            <div class="boxs">
-              <button class="custom-button signup-button">Yoga</button>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4 sticky-div">
+            <div class="row">
+              <div class="col-6">
+                <div class="boxs">
+                  <button id="yogaa" class="custom-button our-classes-buttons">
+                    Yoga
+                  </button>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="boxs">
+                  <button id="group" class="custom-button our-classes-buttons">
+                    Group
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-2">
-            <div class="boxs">
-              <button class="custom-button signup-button">Group</button>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="boxs">
-              <button class="custom-button signup-button">Solo</button>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="boxs">
-              <button class="custom-button signup-button">Stretching</button>
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 sticky-div mobile-gap-between-divs"
+          >
+            <div class="row">
+              <div class="col-6">
+                <div class="boxs">
+                  <button id="solo" class="custom-button our-classes-buttons">
+                    Solo
+                  </button>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="boxs">
+                  <button
+                    id="stretching"
+                    class="custom-button our-classes-buttons"
+                  >
+                    Stretching
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="yoga-prag">
-          <div class="yoga">
-            <h4 class="yoga-title">Why are your Yoga?</h4>
-            <p class="yoga-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut
-              tenetur voluptate eum. Aut voluptas quis dignissimos deleniti nemo
-              possimus maxime magni, rem sed nam, animi tempora? Eum,
-              perferendis magnam!
-            </p>
-            <h4 class="yoga-title">When comes Yoga Your Time.</h4>
-            <p class="yoga-text">Saturday-Sunday:8:00am - 10:00am</p>
-            <p class="yoga-text">Monday-Tuesday:10:00am - 12:00pm</p>
-            <p class="yoga-text">Wedneyday-Friday:3:00pm - 6:00pm</p>
-          </div>
-          <div class="yoga-img">
-            <img src="./images/yoga.jpg" alt="" width="400" height="250" />
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 order-lg-1 order-2 order-md-2 order-1 d-flex align-items-center justify-content-center"
+            >
+              <div class="yoga">
+                <h4 class="yoga-title">Why are your Yoga?</h4>
+                <p class="yoga-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  aut tenetur voluptate eum. Aut voluptas quis dignissimos
+                  deleniti nemo possimus maxime magni, rem sed nam, animi
+                  tempora? Eum, perferendis magnam!
+                </p>
+                <h4 class="yoga-title">When comes Yoga Your Time.</h4>
+                <p class="yoga-text">Saturday-Sunday:8:00am - 10:00am</p>
+                <p class="yoga-text">Monday-Tuesday:10:00am - 12:00pm</p>
+                <p class="yoga-text">Wednesday-Friday:3:00pm - 6:00pm</p>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 order-lg-2 order-1 order-md-1 order-2 align-items-center justify-content-center"
+            >
+              <div class="yoga-img">
+                <img src="./images/yoga.jpg" alt="" width="400" height="250" />
+              </div>
+            </div>
           </div>
         </div>
         <div class="shadow"></div>
       </div>
-      <div class="bmi-prag">
-        <div class="bmi-container">
-          <div class="bmi">
-            <h4 class="title-3">BMI Calculator</h4>
-            <div class="bmi-text">
-              <p>
-                Contrary to polular belief,Lorem Ipsum is not simply random
-                text.It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old.
-              </p>
-              <p>
-                Contrary to polular belief,Lorem Ipsum is not simply random
-                text.It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old.
-              </p>
+      <div class="container" id="bmi-calc">
+        <div class="row">
+          <div class="col-lg-6 order-lg-1 order-2 order-md-2 order-1">
+            <div class="bmi">
+              <h4 class="title-3">BMI Calculator</h4>
+              <div class="bmi-text">
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old.
+                </p>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old.
+                </p>
+              </div>
+              <div class="input-your">
+                <div class="input-container">
+                  <input
+                    class="input"
+                    type="number"
+                    id="height"
+                    placeholder="   Your Height"
+                  />
+                  <p class="input-y">cm</p>
+                </div>
+                <div class="input-container">
+                  <input
+                    class="input"
+                    type="number"
+                    id="weight"
+                    placeholder="   Your Weight"
+                  />
+                  <p class="input-y">kg</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="input-your">
-            <div class="input-container">
-              <input class="input" type="text" placeholder="   Your Height" />
-              <p class="input-y">cm</p>
-            </div>
-            <div class="input-container">
-              <input class="input" type="text" placeholder="   Your Weight" />
-              <p class="input-y">kg</p>
+          <div class="col-lg-6 order-lg-2 order-1 order-md-1 order-2">
+            <div class="bmi-img">
+              <h6 class="title-2">Your BMI:</h6>
+              <img
+                src="./images/bmi-index.jpg"
+                alt=""
+                width="500"
+                height="235"
+              />
+              <i class="fa-solid fa-caret-up img-triangle"></i>
             </div>
           </div>
-        </div>
-        <div class="bmi-img">
-          <h6 class="title-2">Your BMI</h6>
-          <img src="./images/bmi-index.jpg" alt="" width="500" height="235" />
         </div>
       </div>
     </section>
-    <section id="fourth">
+
+    <!-- Our Best Trainers Bölümü -->
+    <section id="fourth" class="section">
       <div>
         <h2 class="title-1">OUR BEST TRAINERS</h2>
         <hr class="liner" />
@@ -219,21 +272,34 @@
           <img class="trainer-img" src="./images/trainer1.jpg" alt="" />
           <div class="after"></div>
           <div class="after-right"></div>
-          <!-- <div class="after-left"></div> -->
+          <div class="after-left">
+            <span>Jane Doe</span>
+            <p>Cardio Trainer</p>
+          </div>
         </div>
         <div class="tra-div">
           <img class="trainer-img" src="./images/trainer2.jpg" alt="" />
           <div class="after"></div>
           <div class="after-right"></div>
+          <div class="after-left">
+            <span>John Doe</span>
+            <p>Cardio Trainer</p>
+          </div>
         </div>
         <div class="tra-div">
           <img class="trainer-img" src="./images/trainer3.jpg" alt="" />
           <div class="after"></div>
           <div class="after-right"></div>
+          <div class="after-left">
+            <span>Jane Doe</span>
+            <p>Cardio Trainer</p>
+          </div>
         </div>
       </div>
     </section>
-    <section id="fifth">
+
+    <!-- Purchase From Us Bölümü -->
+    <section id="fifth" class="section">
       <div>
         <h2 class="title-1">PURCHASE FROM US</h2>
         <hr class="liner" />
@@ -249,7 +315,7 @@
           <p class="pur-title">Kettlebell / 5kg</p>
           <p class="strike"><span class="through">89,99$</span>/ 59,99$</p>
           <div class="add">
-            <a href=""
+            <a href="#"
               ><i class="fa-solid fa-cart-shopping shop"></i>
               <p class="basket">Add to Cart</p></a
             >
@@ -262,7 +328,7 @@
             <p class="strike"><span class="through">899,99$</span>/ 599,99$</p>
           </div>
           <div class="add">
-            <a href=""
+            <a href="#"
               ><i class="fa-solid fa-cart-shopping shop"></i>
               <p class="basket">Add to Cart</p></a
             >
@@ -275,7 +341,7 @@
             <p class="strike"><span class="through">89,99$</span>/ 59,99$</p>
           </div>
           <div class="add">
-            <a href=""
+            <a href="#"
               ><i class="fa-solid fa-cart-shopping shop"></i>
               <p class="basket">Add to Cart</p></a
             >
@@ -288,7 +354,7 @@
             <p class="strike"><span class="through">89,99$</span>/ 59,99$</p>
           </div>
           <div class="add">
-            <a href=""
+            <a href="#"
               ><i class="fa-solid fa-cart-shopping shop"></i>
               <p class="basket">Add to Cart</p></a
             >
@@ -296,7 +362,9 @@
         </div>
       </div>
     </section>
-    <section id="sixth">
+
+    <!-- Review Client Bölümü -->
+    <section id="sixth" class="section">
       <div>
         <h2 class="title-1">REVIEW CLIENT</h2>
         <hr class="liner" />
@@ -339,7 +407,9 @@
         </div>
       </div>
     </section>
-    <section id="seventh">
+
+    <!-- Contact Us Bölümü -->
+    <section id="seventh" class="section">
       <div>
         <h2 class="title-1">CONTACT US</h2>
         <hr class="liner" />
@@ -348,7 +418,7 @@
           classical at Hampden-Sydney College
         </p>
       </div>
-      <div class="contact-container">
+      <div class="contact-containers">
         <div class="client-box">
           <div class="client-info">
             <div>
@@ -398,8 +468,8 @@
         <div id="contact-info">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.097758347508!2d28.98046421552943!3d41.00898227929873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa80a2bf49735%3A0x2ac3b873c305ad07!2sGalata%20Kulesi!5e0!3m2!1str!2str!4v1647698036733!5m2!1str!2str"
-            width="600"
-            height="450"
+            width="500"
+            height="500"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -407,6 +477,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer id="footer">
       <div class="footer-logo">
         <img src="./images/logo.png" alt="" />
@@ -419,6 +491,7 @@
           sequi!
         </p>
       </div>
+
       <div class="contact-container">
         <div class="contact-infos">
           <p class="cont-title">Information</p>
@@ -440,16 +513,6 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
