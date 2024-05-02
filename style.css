@@ -57,7 +57,7 @@ h2{
 /* hero-section */
 #section-hero{
   height: 100vh;
-  background-image: url(./dist/assets/hero-man-coW_7f6a.jpg);
+  background-image: url(/hero-man.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
