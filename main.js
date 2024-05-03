@@ -32,6 +32,7 @@ var focusSectionLink = function (event) {
     }
   }
 };
+// Sayfa değiştirme
 
 var focusSection = function (event) {
   event.preventDefault();
@@ -67,28 +68,28 @@ yogaBtn.addEventListener("click", (event) => {
   yogaTitle.textContent = "Why are your Yoga?";
   yogaText.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut tenetur voluptate eum.Aut voluptas quis dignissimos deleniti nemo possimus maxime magni, rem sed nam, animi tempora? Eum,perferendis magnam!";
-  yogaImg.src = "/yoga.jpg";
+  yogaImg.src = "/images/yoga.jpg";
 });
 
 soloBtn.addEventListener("click", (event) => {
   yogaTitle.textContent = "Why are your Solo?";
   yogaText.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut tenetur voluptate eum.Aut voluptas quis dignissimos deleniti nemo possimus maxime magni, rem sed nam, animi tempora? Eum,perferendis magnam!";
-  yogaImg.src = "/solo.jpg";
+  yogaImg.src = "/images/solo.jpg";
 });
 
 groupBtn.addEventListener("click", (event) => {
   yogaTitle.textContent = "Why are your Group?";
   yogaText.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut tenetur voluptate eum.Aut voluptas quis dignissimos deleniti nemo possimus maxime magni, rem sed nam, animi tempora? Eum,perferendis magnam!";
-  yogaImg.src = "/group.webp";
+  yogaImg.src = "/images/group.webp";
 });
 
 strecBtn.addEventListener("click", (event) => {
   yogaTitle.textContent = "Why are your Stretching?";
   yogaText.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut tenetur voluptate eum.Aut voluptas quis dignissimos deleniti nemo possimus maxime magni, rem sed nam, animi tempora? Eum,perferendis magnam!";
-  yogaImg.src = "/stret.webp";
+  yogaImg.src = "/images/stret.webp";
 });
 
 // BMI hesaplama
@@ -122,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else if (bmi <= 34.9) {
         leftPercentage = 54 + (bmi - 29.9) * (17 / 5);
       } else {
-        leftPercentage = Math.min(71 + (bmi - 34.9) * (15 / 5), 86);
+        leftPercentage = Math.min(71 + (bmi - 34.9) * (15 / 5), 92);
       }
 
       triangleIcon.style.left = `${leftPercentage}%`;
@@ -136,20 +137,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // menü açma - kapama
 
-document.addEventListener("DOMContentLoaded", function() {
-  
+document.addEventListener("DOMContentLoaded", function () {
   var navbarToggler = document.querySelector(".navbar");
   var navbarCollapse = document.querySelector(".navbar-nav");
 
-  navbarToggler.addEventListener("click", function() {
+  navbarToggler.addEventListener("click", function () {
     navbarCollapse.classList.toggle("show");
   });
 
-  
-  document.addEventListener("click", function(event) {
-    if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+  document.addEventListener("click", function (event) {
+    if (
+      !navbarCollapse.contains(event.target) &&
+      !navbarToggler.contains(event.target)
+    ) {
       navbarCollapse.classList.remove("show");
     }
   });
 });
-

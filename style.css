@@ -1,79 +1,83 @@
-
 /* başlıklar */
-h2{
+h2 {
   color: #325494;
   font-weight: bold;
 }
 
 /* header */
-#header{
+#header {
   background: transparent;
   height: 80px;
   transition: background-color 0.3s ease;
 }
 
 #header.scrolled {
-  background-color:#325494;
+  background-color: #325494;
 }
 
-#header .container{
+#header .container {
   display: flex;
   justify-content: space-between;
 }
 
-#header .logo img{
+#header .logo img {
   display: block;
   justify-content: space-around;
 }
 
-#navbar ul{
+#navbar ul {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-#navbar li{
+#navbar li {
   position: relative;
   padding: 10px 20px;
 }
 
-#navbar li a{
+#navbar li a {
   font-weight: bold;
-  color:#fff;
+  color: #fff;
 }
 
-.menu-btn,.menu-icon{
+.menu-btn,
+.menu-icon {
   display: none;
 }
+
 .join {
   background-color: #f59c06;
   border-radius: 6px;
 }
-.btn-primary{
-  background-color:#325494;
+
+.btn-primary {
+  background-color: #325494;
   border: none;
 }
 
 /* hero-section */
-#section-hero{
+#section-hero {
   height: 100vh;
-  background-image: url(/hero-man.jpg);
+  background-image: url(/images/hero-man.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-h1{
+
+h1 {
   font-size: 70px;
   font-weight: bold;
-  color:#fff;
+  color: #fff;
 }
-#section-hero p{
-  color:#fff;
-  font-size:20px ;
+
+#section-hero p {
+  color: #fff;
+  font-size: 20px;
   font-weight: bold;
-  background-color:black;
-  opacity:0.8;
+  background-color: black;
+  opacity: 0.8;
 }
 
 .text-1 {
@@ -273,7 +277,7 @@ h1{
   margin-bottom: 50px;
 }
 
-/* Ayrı section olarak Our Classes Bölümü */ 
+/* Ayrı section olarak Our Classes Bölümü */
 
 #third {
   margin-bottom: 50px;
@@ -567,7 +571,7 @@ h1{
   z-index: 3;
 }
 
-/* Purchase From Us */  
+/* Purchase From Us */
 
 #fifth {
   display: flex;
@@ -924,6 +928,7 @@ ul {
   #header {
     max-width: 576px;
   }
+
   .navbar {
     display: flex;
     position: fixed;
@@ -931,17 +936,19 @@ ul {
     right: 0;
     width: 30%;
     height: 50vh;
-    background-color:#325494;
+    background-color: #325494;
     flex-direction: column;
     gap: 1rem;
     z-index: 1000;
     transform: translate(100%);
     transition: all 0.5s;
   }
+
   .menu-btn {
     display: none;
   }
-  .menu-btn:checked ~ .navbar {
+
+  .menu-btn:checked~.navbar {
     display: flex;
     transform: translateY(0);
   }
@@ -951,9 +958,10 @@ ul {
     display: block;
     font-size: 3rem;
     cursor: pointer;
-    color:#fff;
+    color: #fff;
     z-index: 2000;
   }
+
   #navbar ul {
     display: flex;
     flex-direction: column;
@@ -961,7 +969,7 @@ ul {
   }
 
   /* Giriş bölümü mobil */
-  #section-hero{
+  #section-hero {
     padding-top: 60px;
   }
 
@@ -978,9 +986,9 @@ ul {
     width: auto;
     height: 45px;
     line-height: 1;
-}
+  }
 
-.details-button {
+  .details-button {
     background-color: rgba(0, 0, 0, .6);
     color: #fff;
     border: 2px solid #fff;
@@ -995,9 +1003,9 @@ ul {
     line-height: 1;
     border-radius: 3px;
     font-family: Outfit;
-}
+  }
 
-.signup-button {
+  .signup-button {
     background-color: #325494;
     color: #fff;
     padding: 10px 30px;
@@ -1011,39 +1019,39 @@ ul {
     line-height: 1;
     border-radius: 3px;
     font-family: Outfit;
-}
+  }
 
-.signup-button:hover {
+  .signup-button:hover {
     background-color: #f59c06;
-}
+  }
 
-.details-button:hover {
+  .details-button:hover {
     background-color: #f59c06;
     color: #fff;
     border: none;
-}
+  }
 
-.button-space {
+  .button-space {
     width: 50px;
     display: inline-block;
-}
+  }
 
-.sig-det-btn {
-  display: block;
-}
+  .sig-det-btn {
+    display: block;
+  }
 
-.sig-det-btn::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .sig-det-btn::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-.sig-det-btn button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  text-align: left;
-}
+  .sig-det-btn button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+  }
 
   .text-1 {
     font-size: 30px;
