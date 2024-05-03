@@ -68,28 +68,28 @@ yogaBtn.addEventListener("click", (event) => {
   yogaTitle.textContent = "Why are your Yoga?";
   yogaText.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut tenetur voluptate eum.Aut voluptas quis dignissimos deleniti nemo possimus maxime magni, rem sed nam, animi tempora? Eum,perferendis magnam!";
-  yogaImg.src = "/yoga.jpg";
+  yogaImg.src = "/public/yoga.jpg";
 });
 
 soloBtn.addEventListener("click", (event) => {
   yogaTitle.textContent = "Why are your Solo?";
   yogaText.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut tenetur voluptate eum.Aut voluptas quis dignissimos deleniti nemo possimus maxime magni, rem sed nam, animi tempora? Eum,perferendis magnam!";
-  yogaImg.src = "/solo.jpg";
+  yogaImg.src = "/public/solo.jpg";
 });
 
 groupBtn.addEventListener("click", (event) => {
   yogaTitle.textContent = "Why are your Group?";
   yogaText.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut tenetur voluptate eum.Aut voluptas quis dignissimos deleniti nemo possimus maxime magni, rem sed nam, animi tempora? Eum,perferendis magnam!";
-  yogaImg.src = "/group.webp";
+  yogaImg.src = "/public/group.webp";
 });
 
 strecBtn.addEventListener("click", (event) => {
   yogaTitle.textContent = "Why are your Stretching?";
   yogaText.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut tenetur voluptate eum.Aut voluptas quis dignissimos deleniti nemo possimus maxime magni, rem sed nam, animi tempora? Eum,perferendis magnam!";
-  yogaImg.src = "/stret.webp";
+  yogaImg.src = "/public/stret.webp";
 });
 
 // BMI hesaplama
