@@ -1,4 +1,4 @@
-## Sport Center Projesi
+### Sport Center Projesi
 ## Menüler ve İçerikler
 ## (Home)
 Ana sayfa, projenin giriş noktasıdır. Ziyaretçiler, spor merkezi hakkında genel bilgiler alabilir ve diğer menülere erişebilirler.
